@@ -1,0 +1,35 @@
+{
+  "name": "@kissmybutton/motorcortex-code-typing",
+  "version": "0.0.1",
+  "main": "dist/main.js",
+  "repository": "",
+  "author": "Kiss My Button PC",
+  "license": "MIT",
+  "scripts": {
+    "build": "npx babel ./src --out-dir ./dist --source-maps",
+    "start": "webpack && webpack-dev-server --inline --hot --disableHostCheck"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-jest": "^24.7.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "*",
+    "babel-preset-minify": "0.5.1",
+    "babel-loader": "^7.1.4",
+    "npx": "*",
+    "babel-preset-es2015": "*",
+    "codeflask": "1.4.1",
+    "webpack": "4.40.2",
+    "webpack-cli": "3.3.9",
+    "webpack-dev-server": "3.8.1",
+    "@kissmybutton/motorcortex": "3.5.4-rc3",
+    "@kissmybutton/motorcortex-player": "1.4.8",
+    "@babel/plugin-proposal-decorators": "^7.4.0",
+    "@babel/plugin-proposal-class-properties": "^7.4.0"
+  },
+  "peerDependencies": {
+    "@kissmybutton/motorcortex": "3.5.4-rc3"
+  }
+}

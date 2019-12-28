@@ -1,0 +1,7 @@
+"use strict";
+
+var BACKGROUND_COLOR = '#1d1f21';
+var LINE_HEIGHT = '20px';
+var FONT_SIZE = '13px';
+module.exports = "\n.codeflask {\n  font-size: ".concat(FONT_SIZE, ";\n  line-height ").concat(LINE_HEIGHT, ";\n  background: ").concat(BACKGROUND_COLOR, ";\n  color: #61afef;\n}\n\n.codeflask .token.punctuation {\n  color: #ffffff;\n}\n\n.codeflask .token.keyword {\n  color: #c397d8;\n}\n\n.codeflask .token.operator {\n  color: #c397d8;\n}\n\n.codeflask .token.parameter {\n  color: #e78c45;\n}\n\n.codeflask .token.string {\n  color: #f0c674;\n}\n\n.codeflask .token.comment {\n  color: #74715e;\n  font-style: italic;\n}\n\n.codeflask .token.function {\n  color: #b9ca4a;\n}\n\n.codeflask .token.boolean {\n  color: orange;\n}\n\n.codeflask .token.number {\n  color: #e04164;\n}\n\n.codeflask .token.selector {\n  color: #b294bb;\n}\n\n.codeflask .token.property {\n  color: #b294bb;\n}\n\n.codeflask .token.tag {\n  color: #b294bb;\n}\n\n.codeflask .token.attr-value {\n  color: #b294bb;\n}\n\n.codeflask__textarea{\n  caret-color: whitesmoke !important;\n  color: ").concat(BACKGROUND_COLOR, " !important;\n}\n\n.codeflask__lines{\n  background: #444;\n    color: #aaa;\n}\n");
+//# sourceMappingURL=dark.js.map
