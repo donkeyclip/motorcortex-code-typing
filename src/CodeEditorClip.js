@@ -1,5 +1,5 @@
 const MotorCortex = require("@kissmybutton/motorcortex");
-import CodeFlask from 'codeflask';
+const CodeFlask = require("codeflask");
 
 class CodeEditorClip extends MotorCortex.API.DOMClip {
     get html() {
