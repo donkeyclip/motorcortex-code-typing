@@ -7,7 +7,7 @@ const CodeTyper = MotorCortex.loadPlugin(CodeTyperDefinition);
 const MyClip = new CodeTyper.Clip({
     darkTheme: true,
     lineNumbers: true,
-    readOnly: false
+    readOnly: true
 }, {
     id: 'code-typer-clip',
     host: document.getElementById('clip'),

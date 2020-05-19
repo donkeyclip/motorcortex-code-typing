@@ -15,5 +15,21 @@ module.exports = {
             }
         }
     }],
-    Clip: CodeEditor
+    Clip: {
+        exportable: CodeEditor,
+        attributesValidationRules: {
+            darkTheme: {
+                optional: true,
+                type: "boolean"
+            },
+            lineNumbers: {
+                optional: true,
+                type: "boolean"
+            },
+            readOnly: {
+                optional: true,
+                type: "boolean"
+            }
+        }
+    }
 }
