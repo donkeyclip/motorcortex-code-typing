@@ -79,7 +79,7 @@ CodeEditor.addIncident(WriteSthg, 0);
 As shown on the example the supported animatedAttr that the "WriteSthg" Incident accepts is the "code", which is going to be typed on the Code Editor.
 The selector should always be "!#editor". 
 
-[Demo:](https://kissmybutton.github.io/motorcortex-code-typing/demo/)
+[Check the Demo out](https://kissmybutton.github.io/motorcortex-code-typing/demo/)
 
 ## License
 [MIT License](https://opensource.org/licenses/MIT)
