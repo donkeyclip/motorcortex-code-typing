@@ -80,3 +80,11 @@ As shown on the example the supported animatedAttr that the "WriteSthg" Incident
 The selector should always be "!#editor". 
 
 [Demo:](https://kissmybutton.github.io/motorcortex-code-typing/demo/)
+
+## License
+[MIT License](https://opensource.org/licenses/MIT)
+
+
+  
+  
+[![Kiss My Button](https://presskit.kissmybutton.gr/logos/kissmybutton-logo-small.png)](https://kissmybutton.gr)
