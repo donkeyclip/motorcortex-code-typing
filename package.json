@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-code-typing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/motorcortex-code-typing.cjs.js",
   "module": "dist/motorcortex-code-typing.esm.js",
   "browser": "dist/motorcortex-code-typing.umd.js",
@@ -66,7 +66,7 @@
     "@babel/preset-env": "^7.9.0",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
-    "@kissmybutton/motorcortex": "3.6.8",
+    "@kissmybutton/motorcortex": "5.0.0",
     "@kissmybutton/motorcortex-player": "^1.5.4",
     "@semantic-release/changelog": "^5.0.1",
     "@semantic-release/git": "^9.0.0",
@@ -123,6 +123,6 @@
     "codeflask": "1.4.1"
   },
   "peerDependencies": {
-    "@kissmybutton/motorcortex": "3.6.8"
+    "@kissmybutton/motorcortex": "5.0.0"
   }
 }
