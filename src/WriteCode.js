@@ -1,6 +1,6 @@
 const MotorCortex = require("@kissmybutton/motorcortex");
 
-class WriteCode extends MotorCortex.API.MonoIncident {
+class WriteCode extends MotorCortex.Effect {
     onGetContext() {
         this.code = this.targetValue.split(/(?!\s+)/);
         this.latency = this.duration / this.code.length;

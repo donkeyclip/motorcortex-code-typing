@@ -2,7 +2,7 @@ const CodeEditor = require('./CodeEditorClip');
 const WriteCode = require('./WriteCode');
 
 module.exports = {
-    npm_name: "@kissmybutton/motorcortex-codetyper",
+    npm_name: "@kissmybutton/motorcortex-code-typing",
     incidents: [{
         exportable: WriteCode,
         name: "WriteCode",

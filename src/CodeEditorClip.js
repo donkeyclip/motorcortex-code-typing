@@ -1,7 +1,7 @@
 const MotorCortex = require("@kissmybutton/motorcortex");
 const CodeFlask = require("codeflask");
 
-class CodeEditorClip extends MotorCortex.API.DOMClip {
+class CodeEditorClip extends MotorCortex.BrowserClip {
     get html() {
         return `
             <div id="code-editor"></div>
