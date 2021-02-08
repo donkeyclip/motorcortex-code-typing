@@ -1,7 +1,11 @@
-const CodeEditor = require('./CodeEditorClip');
-const WriteCode = require('./WriteCode');
+import CodeEditor from './CodeEditorClip'
+import WriteCode from './WriteCode'
 
-module.exports = {
+const pkg = require("../package.json");
+
+export default {
+  npm_name: pkg.name,
+  version: pkg.version,
     npm_name: "@kissmybutton/motorcortex-code-typing",
     incidents: [{
         exportable: WriteCode,
