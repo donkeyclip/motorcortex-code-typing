@@ -1,21 +1,24 @@
-const MotorCortex = require("@kissmybutton/motorcortex");
-const Player = require("@kissmybutton/motorcortex-player");
+import { loadPlugin } from "@kissmybutton/motorcortex";
+import Player from "@kissmybutton/motorcortex-player";
+import CodeTyperDefinition from "../dist/motorcortex-code-typing.umd";
 
-const CodeTyperDefinition = require('../dist/motorcortex-code-typing.umd');
-const CodeTyper = MotorCortex.loadPlugin(CodeTyperDefinition);
+const CodeTyper = loadPlugin(CodeTyperDefinition);
 
-const MyClip = new CodeTyper.Clip({
+const MyClip = new CodeTyper.Clip(
+  {
     darkTheme: true,
     lineNumbers: true,
-    readOnly: true
-}, {
-    id: 'code-typer-clip',
-    host: document.getElementById('clip'),
-    containerParams: { width: '100%', height: '100%' }
-});
+    readOnly: true,
+  },
+  {
+    id: "code-typer-clip",
+    host: document.getElementById("clip"),
+    containerParams: { width: "800px", height: "600px" },
+  }
+);
 
-const code =
-    `const fs = require("fs");
+const code = `
+const fs = require("fs");
 
 const lines = fs.readFileSync(progress.argv[2], "utf-8");
 const result = lines
@@ -31,25 +34,29 @@ const result = lines
 console.log("File transformed successfully");
 `;
 
-const WriteSthg = new CodeTyper.WriteCode({
+const WriteSthg = new CodeTyper.WriteCode(
+  {
     animatedAttrs: {
-        code: code
-    }
-}, {
+      code: code,
+    },
+  },
+  {
     duration: 12000,
-    selector: "!#editor"
-});
+    selector: "!#editor",
+  }
+);
 
-const WriteSthgElse = new CodeTyper.WriteCode({
+const WriteSthgElse = new CodeTyper.WriteCode(
+  {
     animatedAttrs: {
-        code: code
-    }
-}, {
+      code: code,
+    },
+  },
+  {
     duration: 12000,
-    selector: "!#editor"
-});
-
-
+    selector: "!#editor",
+  }
+);
 
 MyClip.addIncident(WriteSthg, 0);
 MyClip.addIncident(WriteSthgElse, 14000);
