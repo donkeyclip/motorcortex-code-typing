@@ -1,8 +1,8 @@
-const BACKGROUND_COLOR = '#1d1f21'
-const LINE_HEIGHT = '20px'
-const FONT_SIZE = '13px'
+const BACKGROUND_COLOR = "#1d1f21";
+const LINE_HEIGHT = "20px";
+const FONT_SIZE = "13px";
 
-module.exports = `
+export default `
 .codeflask {
   font-size: ${FONT_SIZE};
   line-height ${LINE_HEIGHT};
@@ -70,6 +70,6 @@ module.exports = `
 
 .codeflask__lines{
   background: #444;
-    color: #aaa;
+  color: #aaa;
 }
-`
+`;
