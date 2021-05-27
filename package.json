@@ -1,6 +1,6 @@
 {
   "name": "@kissmybutton/motorcortex-code-typing",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "main": "dist/motorcortex-code-typing.cjs.js",
   "module": "dist/motorcortex-code-typing.esm.js",
   "browser": "dist/motorcortex-code-typing.umd.js",
@@ -125,6 +125,6 @@
     "whatwg-fetch": "3.6.2"
   },
   "peerDependencies": {
-    "@kissmybutton/motorcortex": "^7.0.0"
+    "@kissmybutton/motorcortex": ">= 6.4.1 < 8"
   }
 }
