@@ -1,4 +1,4 @@
-import { BrowserClip } from "@kissmybutton/motorcortex";
+import { BrowserClip } from "@donkeyclip/motorcortex";
 import CodeFlask from "codeflask";
 import darkTheme from "./themes/dark";
 export default class CodeEditorClip extends BrowserClip {

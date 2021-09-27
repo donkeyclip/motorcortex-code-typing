@@ -1,4 +1,4 @@
-import { Effect } from "@kissmybutton/motorcortex";
+import { Effect } from "@donkeyclip/motorcortex";
 
 export default class WriteCode extends Effect {
   onGetContext() {
