@@ -3,16 +3,16 @@
 ## Installation
 
 ```bash
-$ npm install --save @kissmybutton/motorcortex-code-typing
+$ npm install --save @donkeyclip/motorcortex-code-typing
 # OR
-$ yarn add @kissmybutton/motorcortex-code-typing
+$ yarn add @donkeyclip/motorcortex-code-typing
 ```
 
 ## Importing
 
 ```javascript
-import MotorCortex from "@kissmybutton/motorcortex";
-import MCCodeTyping from "@kissmybutton/motorcortex-code-typing";
+import MotorCortex from "@donkeyclip/motorcortex";
+import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
 ```
 
 ## Loading
@@ -29,8 +29,8 @@ The Plugin exposes two Incidents in total:
 ### Clip
 The Clip is used to create a new Code Editor and the parameters it accepts a number of parameters:
 ```javascript
-import MotorCortex from "@kissmybutton/motorcortex";
-import MCCodeTyping from "@kissmybutton/motorcortex-code-typing";
+import MotorCortex from "@donkeyclip/motorcortex";
+import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
 const CodeTypingPlugin = MotorCortex.loadPlugin(MCCodeTyping);
 
 const CodeEditor = new CodeTypingPlugin.Clip({
@@ -51,8 +51,8 @@ As shown on the example the supported attributes that the "Clip" Incident accept
 ### WriteCode
 The WriteCode Incident is used to write code on a Code Editor
 ```javascript
-import MotorCortex from "@kissmybutton/motorcortex";
-import MCCodeTyping from "@kissmybutton/motorcortex-code-typing";
+import MotorCortex from "@donkeyclip/motorcortex";
+import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
 const CodeTypingPlugin = MotorCortex.loadPlugin(MCCodeTyping);
 
 const CodeEditor = new CodeTypingPlugin.Clip({
@@ -79,7 +79,7 @@ CodeEditor.addIncident(WriteSthg, 0);
 As shown on the example the supported animatedAttr that the "WriteSthg" Incident accepts is the "code", which is going to be typed on the Code Editor.
 The selector should always be "!#editor". 
 
-[Check the Demo out](https://kissmybutton.github.io/motorcortex-code-typing/demo/)
+[Check the Demo out](https://donkeyclip.github.io/motorcortex-code-typing/demo/)
 
 ## License
 [MIT License](https://opensource.org/licenses/MIT)
