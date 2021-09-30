@@ -1,5 +1,12 @@
 # Changelog
 
+### [1.0.12](https://www.github.com/donkeyclip/motorcortex-code-typing/compare/v1.0.11...v1.0.12) (2021-09-30)
+
+
+### Bug Fixes
+
+* update deps ([10bc472](https://www.github.com/donkeyclip/motorcortex-code-typing/commit/10bc472cbd16b721f43ccc02d15df35553e88a01))
+
 ### 1.0.11 (2021-09-27)
 
 
