@@ -1,6 +1,6 @@
 import { loadPlugin } from "@donkeyclip/motorcortex";
 import Player from "@donkeyclip/motorcortex-player";
-import CodeTyperDefinition from "../dist/motorcortex-code-typing.umd";
+import CodeTyperDefinition from "../dist/motorcortex-code-typing.esm";
 
 const CodeTyper = loadPlugin(CodeTyperDefinition);
 
