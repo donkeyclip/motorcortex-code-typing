@@ -4,8 +4,11 @@
   "main": "dist/motorcortex-code-typing.cjs.js",
   "module": "dist/motorcortex-code-typing.esm.js",
   "browser": "dist/motorcortex-code-typing.umd.js",
-  "repository": "",
-  "author": "Kiss My Button PC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/@donkeyclip/motorcortex-code-typing.git"
+  },
+  "author": "Copyright 2021 Donkeyclip (donkeyclip.com) <opensource@donkeyclip.com>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint -c .eslintrc src/**/*.js",
