@@ -64,7 +64,7 @@ const CodeEditor = new CodeTypingPlugin.Clip({
     containerParams: { width: '800px', height: '800px' }
 });
 
-const WriteSthg = new CodeTyper.WriteCode({
+const WriteSthg = new CodeTypingPlugin.WriteCode({
     animatedAttrs: {
         code: code
     }
