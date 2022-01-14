@@ -1,4 +1,33 @@
-# motorcortex-code-typing
+# MotorCortex-Code-Typing
+
+**Table of Contents**
+
+- [MotorCortex-Code-Typing](#motorcortex-code-typing)
+  - [Demo](#demo)
+- [Intro / Features](#intro--features)
+- [Getting Started](#getting-started)
+  - [Installation](#installation)
+  - [Importing and Loading](#importing-and-loading)
+- [Creating Incidents](#creating-incidents)
+  - [CodeEditor Clip](#codeeditor-clip)
+  - [WriteCode](#writecode)
+- [Adding Incidents in your clip](#adding-incidents-in-your-clip)
+- [Contributing](#contributing)
+- [License](#license)
+- [Sponsored by](#sponsored-by)
+
+## Demo
+
+[Check it out here](https://donkeyclip.github.io/motorcortex-code-typing/demo/)
+
+# Intro / Features
+MotorCortex-Code-Typing renders your clip as a code editor.
+
+The Plugin exposes two Incidents in total:
+* the CodeEditor Clip
+* the WriteCode Incident
+
+# Getting Started
 
 ## Installation
 
@@ -8,31 +37,19 @@ $ npm install --save @donkeyclip/motorcortex-code-typing
 $ yarn add @donkeyclip/motorcortex-code-typing
 ```
 
-## Importing
+## Importing and loading
 
 ```javascript
-import MotorCortex from "@donkeyclip/motorcortex";
+import { loadPlugin } from "@donkeyclip/motorcortex";
 import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
-```
-
-## Loading
-
-```javascript
 const CodeTypingPlugin = MotorCortex.loadPlugin(MCCodeTyping);
 ```
 
-## API
-The Plugin exposes two Incidents in total:
-* the CodeEditor Clip
-* the WriteCode Incident
+# Creating Incidents
 
-### Clip
+## CodeEditor Clip
 The Clip is used to create a new Code Editor and the parameters it accepts a number of parameters:
 ```javascript
-import MotorCortex from "@donkeyclip/motorcortex";
-import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
-const CodeTypingPlugin = MotorCortex.loadPlugin(MCCodeTyping);
-
 const CodeEditor = new CodeTypingPlugin.Clip({
     darkTheme: true,
     lineNumbers: true,
@@ -42,19 +59,17 @@ const CodeEditor = new CodeTypingPlugin.Clip({
     containerParams: { width: '800px', height: '800px' }
 });
 ```
+### CodeEditor Clip Attrs
 
-As shown on the example the supported attributes that the "Clip" Incident accepts are:
-* darkTheme: (optional, defaults to false). A boolean that if set to true the Editor renders in dark mode, otherwise it renders in the default light theme
-* lineNumbers: (optional / defaults to false). Set this to true if you want the editor to show line numbers
-* readOnly (optional / defaults to false). If set to true the editor renders on read onlt mode
+| Name        |                                             Are                                              | Values  |
+| ---------   | :------------------------------------------------------------------------------------------: | ------: |
+| darkTheme   | set to true the Editor renders in dark mode, otherwise it renders in the default light theme (optional, defaults to false)| boolean |
+| lineNumbers |                   set to true if you want the editor to show line numbers (optional, defaults to false)                   | boolean |
+| readOnly    |               set to true if you want the editor to render on read only mode (optional, defaults to false)                | boolean |
 
-### WriteCode
+## WriteCode
 The WriteCode Incident is used to write code on a Code Editor
 ```javascript
-import MotorCortex from "@donkeyclip/motorcortex";
-import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
-const CodeTypingPlugin = MotorCortex.loadPlugin(MCCodeTyping);
-
 const CodeEditor = new CodeTypingPlugin.Clip({
     darkTheme: true,
     lineNumbers: true,
@@ -72,19 +87,36 @@ const WriteSthg = new CodeTypingPlugin.WriteCode({
     duration: 12000,
     selector: "!#editor"
 });
-
-CodeEditor.addIncident(WriteSthg, 0);
 ```
 
-As shown on the example the supported animatedAttr that the "WriteSthg" Incident accepts is the "code", which is going to be typed on the Code Editor.
+### WriteCode Attrs
+| Name   |                              Are                          | Values  |
+| -------| :-------------------------------------------------------: | ------: |
+| code   |   the code which is going to be typed on the Code Editor  | srting |
+
+#### IMPORTANT
+
 The selector should always be "!#editor". 
 
-[Check the Demo out](https://donkeyclip.github.io/motorcortex-code-typing/demo/)
+# Adding Incidents in your clip
 
-## License
+```javascript
+CodeEditorIncident.addIncident(WriteCodeIncident, startTime);
+```
+
+# Contributing 
+
+In general, we follow the "fork-and-pull" Git workflow, so if you want to submit patches and additions you should follow the next steps:
+1.	**Fork** the repo on GitHub
+2.	**Clone** the project to your own machine
+3.	**Commit** changes to your own branch
+4.	**Push** your work back up to your fork
+5.	Submit a **Pull request** so that we can review your changes
+
+# License
+
 [MIT License](https://opensource.org/licenses/MIT)
 
-
-  
+# Sponsored by
 [<img src="https://presskit.donkeyclip.com/logos/donkey%20clip%20logo.svg" width=250></img>](https://donkeyclip.com)
 
