@@ -21,7 +21,7 @@
 [Check it out here](https://donkeyclip.github.io/motorcortex-code-typing/demo/)
 
 # Intro / Features
-MotorCortex-Code-Typing renders your clip as a code editor.
+MotorCortex-Code-Typing is the right plugin to make coding clips. It renders your clip as a code editor.
 
 The Plugin exposes two Incidents in total:
 * the CodeEditor Clip
