@@ -42,7 +42,7 @@ $ yarn add @donkeyclip/motorcortex-code-typing
 ```javascript
 import { loadPlugin } from "@donkeyclip/motorcortex";
 import MCCodeTyping from "@donkeyclip/motorcortex-code-typing";
-const CodeTypingPlugin = MotorCortex.loadPlugin(MCCodeTyping);
+const CodeTypingPlugin = loadPlugin(MCCodeTyping);
 ```
 
 # Creating Incidents
