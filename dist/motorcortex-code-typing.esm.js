@@ -2907,7 +2907,7 @@ var WriteCode = /*#__PURE__*/function (_Effect) {
 }(Effect);
 
 var name = "@donkeyclip/motorcortex-code-typing";
-var version = "1.0.12";
+var version = "1.0.13";
 
 var index = {
   npm_name: name,
