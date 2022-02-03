@@ -59,6 +59,7 @@ const CodeEditor = new CodeTypingPlugin.Clip({
     containerParams: { width: '800px', height: '800px' }
 });
 ```
+
 ### CodeEditor Clip Attrs
 
 | Name        |                                             Are                                              | Values  |
@@ -66,6 +67,8 @@ const CodeEditor = new CodeTypingPlugin.Clip({
 | darkTheme   | set to true the Editor renders in dark mode, otherwise it renders in the default light theme (optional, defaults to false)| boolean |
 | lineNumbers |                   set to true if you want the editor to show line numbers (optional, defaults to false)                   | boolean |
 | readOnly    |               set to true if you want the editor to render on read only mode (optional, defaults to false)                | boolean |
+
+You can also create the CodeEditor Clip without host parameter,only with selector and add it inside another clip as an Incident.
 
 ## WriteCode
 The WriteCode Incident is used to write code on a Code Editor
