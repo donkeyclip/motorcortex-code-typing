@@ -6,15 +6,15 @@ export default class WriteCode extends Effect {
     this.latency = this.duration / this.code.length;
   }
 
-  onProgress(fraction, ms) {
+  onProgress(ms) {
     const cloneArray = this.code.slice();
     let code;
-    if (fraction === 1) {
+    if (this.getFraction(ms) === 1) {
       code = cloneArray;
     } else if (ms < this.latency) {
       code = "";
     } else {
-      code = cloneArray.splice(0, Math.floor(cloneArray.length * fraction));
+      code = cloneArray.splice(0, Math.floor(cloneArray.length * this.getFraction(ms)));
     }
     this.element.entity.flask.updateCode(code.join(""));
     this.element.entity.textarea.focus();
