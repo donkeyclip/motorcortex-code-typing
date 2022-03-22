@@ -2881,16 +2881,16 @@ var WriteCode = /*#__PURE__*/function (_Effect) {
     }
   }, {
     key: "onProgress",
-    value: function onProgress(fraction, ms) {
+    value: function onProgress(ms) {
       var cloneArray = this.code.slice();
       var code;
 
-      if (fraction === 1) {
+      if (this.getFraction(ms) === 1) {
         code = cloneArray;
       } else if (ms < this.latency) {
         code = "";
       } else {
-        code = cloneArray.splice(0, Math.floor(cloneArray.length * fraction));
+        code = cloneArray.splice(0, Math.floor(cloneArray.length * this.getFraction(ms)));
       }
 
       this.element.entity.flask.updateCode(code.join(""));
