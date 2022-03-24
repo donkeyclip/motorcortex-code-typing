@@ -1,6 +1,6 @@
 {
   "name": "@donkeyclip/motorcortex-code-typing",
-  "version": "1.0.13",
+  "version": "2.0.0",
   "main": "dist/motorcortex-code-typing.cjs.js",
   "module": "dist/motorcortex-code-typing.esm.js",
   "browser": "dist/motorcortex-code-typing.umd.js",
