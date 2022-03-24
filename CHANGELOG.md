@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/donkeyclip/motorcortex-code-typing/compare/v1.0.13...v2.0.0) (2022-03-24)
+
+
+### ⚠ BREAKING CHANGES
+
+* update mc version
+
+### Bug Fixes
+
+* update mc version ([ae03f12](https://github.com/donkeyclip/motorcortex-code-typing/commit/ae03f122a0c67da8459544420f8d50ae03cbc9c4))
+
 ### [1.0.13](https://www.github.com/donkeyclip/motorcortex-code-typing/compare/v1.0.12...v1.0.13) (2022-01-30)
 
 
