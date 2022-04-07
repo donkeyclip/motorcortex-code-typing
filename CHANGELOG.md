@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/donkeyclip/motorcortex-code-typing/compare/v2.0.0...v2.1.0) (2022-04-07)
+
+
+### Features
+
+* drop explorer 11 support ([2b94486](https://github.com/donkeyclip/motorcortex-code-typing/commit/2b944869c469aab58d76f1583bd6a601837e3f4e))
+* update compatibility with motorcortex ([7d220ac](https://github.com/donkeyclip/motorcortex-code-typing/commit/7d220ace910f7d998a9f045d83b78a4085e58da9))
+
 ## [2.0.0](https://github.com/donkeyclip/motorcortex-code-typing/compare/v1.0.13...v2.0.0) (2022-03-24)
 
 
