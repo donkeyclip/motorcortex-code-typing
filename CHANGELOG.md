@@ -1,5 +1,12 @@
 # Changelog
 
+### [2.1.1](https://github.com/donkeyclip/motorcortex-code-typing/compare/v2.1.0...v2.1.1) (2022-05-16)
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([388a87e](https://github.com/donkeyclip/motorcortex-code-typing/commit/388a87e6421b52c52d6b0e793a744c359835ce19))
+
 ## [2.1.0](https://github.com/donkeyclip/motorcortex-code-typing/compare/v2.0.0...v2.1.0) (2022-04-07)
 
 
