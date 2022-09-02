@@ -708,19 +708,94 @@ CodeFlask.prototype.startEditor = function () {
 const BACKGROUND_COLOR = "#1d1f21";
 const LINE_HEIGHT = "20px";
 const FONT_SIZE = "13px";
-var darkTheme = "\n.codeflask {\n  font-size: ".concat(FONT_SIZE, ";\n  line-height ").concat(LINE_HEIGHT, ";\n  background: ").concat(BACKGROUND_COLOR, ";\n  color: #61afef;\n}\n\n.codeflask .token.punctuation {\n  color: #ffffff;\n}\n\n.codeflask .token.keyword {\n  color: #c397d8;\n}\n\n.codeflask .token.operator {\n  color: #c397d8;\n}\n\n.codeflask .token.parameter {\n  color: #e78c45;\n}\n\n.codeflask .token.string {\n  color: #f0c674;\n}\n\n.codeflask .token.comment {\n  color: #74715e;\n  font-style: italic;\n}\n\n.codeflask .token.function {\n  color: #b9ca4a;\n}\n\n.codeflask .token.boolean {\n  color: orange;\n}\n\n.codeflask .token.number {\n  color: #e04164;\n}\n\n.codeflask .token.selector {\n  color: #b294bb;\n}\n\n.codeflask .token.property {\n  color: #b294bb;\n}\n\n.codeflask .token.tag {\n  color: #b294bb;\n}\n\n.codeflask .token.attr-value {\n  color: #b294bb;\n}\n\n.codeflask__textarea{\n  caret-color: whitesmoke !important;\n  color: ").concat(BACKGROUND_COLOR, " !important;\n}\n\n.codeflask__lines{\n  background: #444;\n  color: #aaa;\n}\n");
+var darkTheme = `
+.codeflask {
+  font-size: ${FONT_SIZE};
+  line-height ${LINE_HEIGHT};
+  background: ${BACKGROUND_COLOR};
+  color: #61afef;
+}
+
+.codeflask .token.punctuation {
+  color: #ffffff;
+}
+
+.codeflask .token.keyword {
+  color: #c397d8;
+}
+
+.codeflask .token.operator {
+  color: #c397d8;
+}
+
+.codeflask .token.parameter {
+  color: #e78c45;
+}
+
+.codeflask .token.string {
+  color: #f0c674;
+}
+
+.codeflask .token.comment {
+  color: #74715e;
+  font-style: italic;
+}
+
+.codeflask .token.function {
+  color: #b9ca4a;
+}
+
+.codeflask .token.boolean {
+  color: orange;
+}
+
+.codeflask .token.number {
+  color: #e04164;
+}
+
+.codeflask .token.selector {
+  color: #b294bb;
+}
+
+.codeflask .token.property {
+  color: #b294bb;
+}
+
+.codeflask .token.tag {
+  color: #b294bb;
+}
+
+.codeflask .token.attr-value {
+  color: #b294bb;
+}
+
+.codeflask__textarea{
+  caret-color: whitesmoke !important;
+  color: ${BACKGROUND_COLOR} !important;
+}
+
+.codeflask__lines{
+  background: #444;
+  color: #aaa;
+}
+`;
 
 class CodeEditorClip extends motorcortex.BrowserClip {
   get html() {
-    return "<div id=\"code-editor\"></div>";
+    return `<div id="code-editor"></div>`;
   }
 
   get css() {
-    let toReturn = "\n      #code-editor{\n        width: 100%;\n        height: 100%;\n      }\n    ";
+    let toReturn = `
+      #code-editor{
+        width: 100%;
+        height: 100%;
+      }
+    `;
 
     if (this.attrs.darkTheme === true) {
       const theme = darkTheme;
-      toReturn += "".concat(theme);
+      toReturn += `${theme}`;
     }
 
     return toReturn;
