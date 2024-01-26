@@ -1,5 +1,23 @@
 # Changelog
 
+## 1.0.0 (2024-01-26)
+
+
+### ⚠ BREAKING CHANGES
+
+* update mc version
+
+### Features
+
+* drop explorer 11 support ([2b94486](https://github.com/donkeyclip/motorcortex-code-typing/commit/2b944869c469aab58d76f1583bd6a601837e3f4e))
+* update compatibility with motorcortex ([7d220ac](https://github.com/donkeyclip/motorcortex-code-typing/commit/7d220ace910f7d998a9f045d83b78a4085e58da9))
+
+
+### Bug Fixes
+
+* delete commitlint.config.js ([388a87e](https://github.com/donkeyclip/motorcortex-code-typing/commit/388a87e6421b52c52d6b0e793a744c359835ce19))
+* update mc version ([ae03f12](https://github.com/donkeyclip/motorcortex-code-typing/commit/ae03f122a0c67da8459544420f8d50ae03cbc9c4))
+
 ## [2.1.0](https://github.com/donkeyclip/motorcortex-code-typing/compare/v2.0.0...v2.1.0) (2022-04-07)
 
 
